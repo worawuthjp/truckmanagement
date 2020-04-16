@@ -1,0 +1,63 @@
+.login-body{
+  background-color:#0f390f;
+  margin-top: 15vh;
+}
+
+.input-outline-green{
+  border: 1px solid green;
+}
+
+.register{
+  background-color:#0f390f;
+  margin-top: 18vh;
+  margin-bottom: auto;
+}
+.w-35{
+  width: 35%;
+}
+.w-40{
+  width: 40%;
+}
+
+.text-tag{
+  font-size: 16px;
+}
+
+.cursor-hand{
+  cursor: pointer;
+}
+
+.color-theme-green{
+  background-color:#093415;
+  border-color: #093415;
+}
+
+.color-theme-darkblack{
+  background-color:black;
+}
+
+.color-theme-navbar{
+  background-color:#25743B;
+}
+
+.bg-info-body{
+  background-color: #E4F1F5;
+}
+
+.bg-gray-medium{
+  background-color: #D7D7D7;
+  color: black;
+}
+
+.bg-green-add{
+  background-color: #ECFEF5;
+  color: black;
+}
+
+html{
+  font-family: 'Pridi', serif;
+}
+
+#backA:visited{
+  color: #707070;
+}
