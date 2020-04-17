@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutterapp/SecondPage.dart';
+
 
 void main() => runApp(MyApp());
 
@@ -52,7 +54,12 @@ class _MyHomePageState extends State<MyHomePage> {
               style: Theme.of(context).textTheme.headline5,
             ),
             RaisedButton(
-              onPressed: ()=>{},
+              onPressed: ()=>{
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SecondPage() )
+                )
+              },
               color: Colors.blue,
               child: Text('งานที่ได้รับมอบหมาย',
                 style: TextStyle(color: Colors.white),
