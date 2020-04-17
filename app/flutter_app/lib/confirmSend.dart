@@ -1,28 +1,28 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutterapp/ThirdPage.dart';
-import 'package:flutterapp/confirmSend.dart';
+import 'package:flutterapp/main.dart';
 
-class SecondPage extends StatelessWidget{
+class confirmSend extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-      appBar: AppBar(title: Text('งานที่ได้รับมอบหมาย'),
+      appBar: AppBar(
+        title: Text('ลายเซ็นผู้รับ'),
       ),
       body: Center(
-        child:Column(
+        child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text('งานที่ได้รับมอบหมาย'),
             RaisedButton(
               onPressed: ()=>{
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => ThirdPage())
-                )
+                  MaterialPageRoute(builder: (context) => indexApp())
+                ),
               },
               color: Colors.orange,
-              child: Text('นำทาง'),
+              child: Text('ยืนยัน'),
             )
           ],
         ),

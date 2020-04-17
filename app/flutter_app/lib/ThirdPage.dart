@@ -1,4 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutterapp/confirmSend.dart';
+import 'package:flutterapp/main.dart';
 
 class ThirdPage extends StatelessWidget{
   @override
@@ -8,7 +11,23 @@ class ThirdPage extends StatelessWidget{
       appBar: AppBar(
         title: Text('นำทาง'),
       ),
-      body: Text('ข้อมูลนำทาง'),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            RaisedButton(
+              onPressed: ()=>{
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context)=>confirmSend())
+                )
+              },
+              color: Colors.green,
+              child: Text('ส่งของ'),
+            )
+          ],
+        ),
+      ),
     );
     throw UnimplementedError();
   }
