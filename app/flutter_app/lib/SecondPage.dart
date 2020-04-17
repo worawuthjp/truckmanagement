@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterapp/ThirdPage.dart';
 
 class SecondPage extends StatelessWidget{
   @override
@@ -8,7 +9,20 @@ class SecondPage extends StatelessWidget{
       appBar: AppBar(title: Text('งานที่ได้รับมอบหมาย'),
       ),
       body: Center(
-        child: Text('test'),
+        child:Column(
+          children: <Widget>[
+            Text('งานที่ได้รับมอบหมาย'),
+            RaisedButton(
+              onPressed: ()=>{
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ThirdPage())
+                )
+              },
+              child: Text('นำทาง'),
+            )
+          ],
+        ),
       ),
     );
     throw UnimplementedError();
