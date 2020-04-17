@@ -108,7 +108,7 @@ class MapShow extends State<googleMap>{
         floatingActionButton: FloatingActionButton.extended(
           onPressed: _goToMe,
           label: Text('ตำแหน่งของฉัน'),
-          icon: Icon(Icons.near_me),
+          icon: Icon(Icons.gps_fixed),
         ),
     );
     throw UnimplementedError();
