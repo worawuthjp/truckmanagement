@@ -89,7 +89,7 @@ class MapShow extends State<googleMap>{
         mapType: MapType.normal,
         initialCameraPosition:CameraPosition(
           target: LatLng(13.7650836, 100.5379664),
-          zoom: 16,
+          zoom: 11,
         ),
         onMapCreated: (GoogleMapController controller) {
           _controller.complete(controller);
@@ -100,6 +100,12 @@ class MapShow extends State<googleMap>{
               position: LatLng(13.6900043, 100.7479237),
               infoWindow: InfoWindow(title: "สนามบินสุวรรณภูมิ", snippet: "สนามบินนานาชาติของประเทศไทย"),
               onTap: () => _openOnGoogleMapApp(13.6900043, 100.7479237)
+          ),
+          Marker(
+              markerId: MarkerId("2"),
+              position: LatLng(15.1434022, 98.435136),
+              infoWindow: InfoWindow(title: "สะพานมอญ", snippet: "สะพานมอญ"),
+              onTap: () => _openOnGoogleMapApp(15.1434022, 98.435136)
           ),
 
         },
