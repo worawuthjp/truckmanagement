@@ -37,4 +37,8 @@
             "responsive": true,
         });
     });
+
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
 </script>
