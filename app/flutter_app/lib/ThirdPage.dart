@@ -61,6 +61,9 @@ class MapShow extends State<googleMap>{
       MaterialPageRoute(builder: (context) => confirmSend())
     );
   }
+  Future _routeToGps(){
+    Navigator.push(context,_openOnGoogleMapApp(15.1434022, 98.435136));
+  }
 
   _openOnGoogleMapApp(double latitude, double longitude) async {
     String googleUrl =
@@ -82,7 +85,7 @@ class MapShow extends State<googleMap>{
             onPressed: _routeToconfirmSend),
         IconButton(
             icon: Icon(Icons.airplanemode_active),
-            onPressed: _goTo)
+            onPressed: _routeToGps)
       ]),
       body: GoogleMap(
         myLocationEnabled: true,
@@ -113,7 +116,7 @@ class MapShow extends State<googleMap>{
 
         floatingActionButton: FloatingActionButton.extended(
           onPressed: _goToMe,
-          label: Text('ตำแหน่งของฉัน'),
+          label: Text('ตำแหน่งปัจจุบัน'),
           icon: Icon(Icons.gps_fixed),
         ),
     );
