@@ -6,7 +6,7 @@
             <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-            <a href="{{URL('/')}}" class="nav-link"><i class="fas fa-home nav-icon"></i>Home</a>
+            <a href="{{URL('/')}}" class="nav-link"><i class="fas fa-home">&nbsp;</i>Home</a>
         </li>
     </ul>
 
@@ -25,10 +25,10 @@
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
         <li class="nav-item d-none d-sm-inline-block">
-            <a href="{{URL('?')}}" class="nav-link"><i class="fas fa-cog nav-icon"></i>Setting</a>
+            <a href="{{URL('?')}}" class="nav-link"><i class="fas fa-cog nav-icon">&nbsp;</i>Setting</a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-            <a href="{{URL('?')}}" class="nav-link"><i class="fas fa-sign-out-alt nav-icon"></i>logout</a>
+            <a href="{{URL('?')}}" class="nav-link"><i class="fas fa-sign-out-alt nav-icon">&nbsp;</i>logout</a>
         </li>
     </ul>
 </nav>
