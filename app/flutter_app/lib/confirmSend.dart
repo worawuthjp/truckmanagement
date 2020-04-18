@@ -1,11 +1,14 @@
+import 'dart:io';
 import 'dart:ui';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_signature_pad/flutter_signature_pad.dart';
+import 'package:flutterapp/main.dart';
+import 'package:toast/toast.dart';
+import 'HexColor.dart';
 
 class confirmSend extends StatelessWidget {
-  Color c1 = HexColor('#DBDBDB');
+  final Color signBackground = HexColor('#DBDBDB');
+  final Color conBtnColor = HexColor('#FBB820');
 
   @override
   Widget build(BuildContext context) {
@@ -15,58 +18,69 @@ class confirmSend extends StatelessWidget {
         title: Text('ลายเซ็นผู้รับ'),
       ),
       body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-      Expanded(
-      child: Container(
-          decoration: BoxDecoration(
-          border: Border.all(),
-      color: c1,
-    ),
-    child: Padding(
-    padding: const EdgeInsets.all(8.0),
-    child: Signature(
-    color: Colors.black,
-    strokeWidth: 2,
-    backgroundPainter: null,
-    onSign: null,
-    key: null,
-    ),
-    ),
-    ),
-    ),
-    Column(
-    children: <Widget>[
-    Container(
-    height: 100,
-    child:Padding(
-    child: RaisedButton(
-    onPressed: ()=>{},
-    color: Colors.orange,
-    child: Text('ยืนยัน',
-    ),,
-    ),
-    )
-    ],
-    )
-    ],
-    ),
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Expanded(
+            child: Container(
+              margin: EdgeInsets.all(30),
+              decoration: BoxDecoration(
+                border: Border.all(),
+                color: signBackground,
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(2.0),
+                child: Signature(
+                  color: Colors.black,
+                  strokeWidth: 2,
+                  backgroundPainter: null,
+                  onSign: null,
+                  key: null,
+                ),
+              ),
+            ),
+          ),
+          Column(
+            children: <Widget>[
+              Container(
+                  margin: EdgeInsets.only(
+                    top: 0,
+                    bottom: 60,
+                  ),
+                  alignment: Alignment.topCenter,
+                  child: Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: RaisedButton(
+                      onPressed: () {
+                        bool work = false;
+                        if (work) {
+                          Toast.show("ทำรายการสำเร็จ", context,
+                              duration: Toast.LENGTH_LONG,
+                              gravity: Toast.BOTTOM,
+                              backgroundColor: Colors.green);
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => indexApp()));
+                        }
+                        else{
+                          Toast.show("ทำรายการไม่สำเร็จ", context,
+                              duration: Toast.LENGTH_LONG,
+                              gravity: Toast.BOTTOM,
+                              backgroundColor: Colors.red);
+                        }
+                      },
+                      color: conBtnColor,
+                      child: Text(
+                        'ยืนยันการส่งของ',
+                        style: TextStyle(fontSize: 16),
+                      ),
+                    ),
+                  ))
+            ],
+          )
+        ],
+      ),
     );
-    throw
-    UnimplementedError
-    (
-    );
+    throw UnimplementedError();
   }
-}
-
-class HexColor extends Color {
-  static int _getColorFromHex(String hexColor) {
-    hexColor = hexColor.toUpperCase().replaceAll("#", "");
-    if (hexColor.length == 6) {
-      hexColor = "FF" + hexColor;
-    }
-    return int.parse(hexColor, radix: 16);
-  }
-
-  HexColor(final String hexColor) : super(_getColorFromHex(hexColor));
 }

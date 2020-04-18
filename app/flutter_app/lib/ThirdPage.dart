@@ -83,9 +83,6 @@ class MapShow extends State<googleMap>{
         IconButton(
             icon: Icon(Icons.send),
             onPressed: _routeToconfirmSend),
-        IconButton(
-            icon: Icon(Icons.airplanemode_active),
-            onPressed: _routeToGps)
       ]),
       body: GoogleMap(
         myLocationEnabled: true,
