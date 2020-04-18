@@ -19,3 +19,6 @@
 <link rel="stylesheet" href="{{asset('bootstrap/plugins/daterangepicker/daterangepicker.css')}}">
 <!-- summernote -->
 <link rel="stylesheet" href="{{asset('bootstrap/plugins/summernote/summernote-bs4.css')}}">
+<!-- DataTables -->
+<link rel="stylesheet" href="bootstrap/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+<link rel="stylesheet" href="bootstrap/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">

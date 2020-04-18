@@ -8,12 +8,13 @@
     <title>@yield('title')</title>
     @include('partials.header')
 </head>
-<body class="hold-transition sidebar-mini layout-fixed fixed">
+<body class="hold-transition sidebar-mini layout-fixed fixed pt-lg-5">
 <div class="wrapper">
     @include('partials.navbar')
     @include('partials.sidebar')
     @yield('body')
 </div>{{--/wrapper--}}
 @include('partials.footer')
+@yield('footer')
 </body>
 </html>

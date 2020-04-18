@@ -68,7 +68,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="pages/widgets.html" class="nav-link">
+                    <a href="{{URL('/process')}}" class="nav-link">
                         <i class="fas fa-check-circle nav-icon"></i>
                         <p>
                             Process
