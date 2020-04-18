@@ -61,6 +61,9 @@ class MapShow extends State<googleMap>{
       MaterialPageRoute(builder: (context) => confirmSend())
     );
   }
+  Future _routeToGps(){
+    Navigator.push(context,_openOnGoogleMapApp(15.1434022, 98.435136));
+  }
 
   _openOnGoogleMapApp(double latitude, double longitude) async {
     String googleUrl =
@@ -80,16 +83,13 @@ class MapShow extends State<googleMap>{
         IconButton(
             icon: Icon(Icons.send),
             onPressed: _routeToconfirmSend),
-        IconButton(
-            icon: Icon(Icons.airplanemode_active),
-            onPressed: _goTo)
       ]),
       body: GoogleMap(
         myLocationEnabled: true,
         mapType: MapType.normal,
         initialCameraPosition:CameraPosition(
           target: LatLng(13.7650836, 100.5379664),
-          zoom: 16,
+          zoom: 11,
         ),
         onMapCreated: (GoogleMapController controller) {
           _controller.complete(controller);
@@ -101,14 +101,20 @@ class MapShow extends State<googleMap>{
               infoWindow: InfoWindow(title: "สนามบินสุวรรณภูมิ", snippet: "สนามบินนานาชาติของประเทศไทย"),
               onTap: () => _openOnGoogleMapApp(13.6900043, 100.7479237)
           ),
+          Marker(
+              markerId: MarkerId("2"),
+              position: LatLng(15.1434022, 98.435136),
+              infoWindow: InfoWindow(title: "สะพานมอญ", snippet: "สะพานมอญ"),
+              onTap: () => _openOnGoogleMapApp(15.1434022, 98.435136)
+          ),
 
         },
       ),
 
         floatingActionButton: FloatingActionButton.extended(
           onPressed: _goToMe,
-          label: Text('ตำแหน่งของฉัน'),
-          icon: Icon(Icons.near_me),
+          label: Text('ตำแหน่งปัจจุบัน'),
+          icon: Icon(Icons.gps_fixed),
         ),
     );
     throw UnimplementedError();
