@@ -1,0 +1,5 @@
+.focus-select:focus {
+  outline: none;
+  border: none;
+}
+
