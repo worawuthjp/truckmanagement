@@ -59,7 +59,7 @@
             </div>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-            <a  data-toggle="modal" data-target="#exampleModal" class="nav-link "  ><i class="fas fa-sign-out-alt nav-icon" ></i>logout</a>
+            <a  data-toggle="modal" data-target="#exampleModal" class="nav-link "  ><i class="fas fa-sign-out-alt nav-icon" ></i>Logout</a>
         </li>
     </ul>
 </nav>
