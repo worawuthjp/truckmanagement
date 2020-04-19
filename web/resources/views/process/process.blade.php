@@ -1,4 +1,4 @@
-@extends('index.home')
+@extends('layout.master')
 
 @section('body')
     <!-- Content Wrapper. Contains page content -->
