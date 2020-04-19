@@ -20,6 +20,7 @@
 <script src="bootstrap/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
 <script src="bootstrap/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
 
+
 <!-- page script -->
 <script>
     $(function () {
@@ -42,3 +43,4 @@
         $('[data-toggle="tooltip"]').tooltip()
     })
 </script>
+

@@ -1,6 +1,6 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4 fixed-top">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
+    <a href="{{URL('/')}}" class="brand-link">
         <img src="bootstrap/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
              style="opacity: .8">
         <span class="brand-text font-weight-light">Truck Management</span>
@@ -33,7 +33,7 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="pages/layout/boxed.html" class="nav-link">
+                            <a href="{{URL('/carinfo')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon nav-icon"></i>
                                 <p>ข้อมูลรถ</p>
                             </a>

@@ -1,4 +1,4 @@
-@extends('layout.master')
+@extends('index.home')
 
 @section('body')
     <!-- Content Wrapper. Contains page content -->
@@ -71,7 +71,7 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header bg-info">
-                    <h4 class="modal-title"><i class="fas fa-plus-circle col-3"></i>เพิ่มงานใหม่</h4>
+                    <h4 class="modal-title"><i class="fas fa-plus-circle "></i> เพิ่มงานใหม่</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -130,5 +130,3 @@
     <!-- /.modal -->
 @endsection
 
-@section('footer')
-@endsection
