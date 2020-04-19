@@ -10,3 +10,51 @@
 .border-show-solid{
     border-style: solid;
 }
+
+.center-page{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+.button:focus{
+    outline: none;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.input-outline{
+    border-width: 1px;
+    padding: 5px;
+    outline: none;
+    border-radius: 0.5em;
+}
+
+.input-outline:focus{
+    outline: none;
+}
+.padding-5px{
+    padding: 5px;
+}
+.text-underline{
+    text-decoration: underline;
+}

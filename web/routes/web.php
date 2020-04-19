@@ -20,3 +20,6 @@ Route::get('/', function () {
 Route::get('/process', function () {
     return view('process.process');
 });
+Route::get('/login', function () {
+    return view('login');
+});

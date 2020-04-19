@@ -70,7 +70,7 @@
     <div class="modal fade" id="addProcess">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header bg-info">
                     <h4 class="modal-title"><i class="fas fa-plus-circle col-3"></i>เพิ่มงานใหม่</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
