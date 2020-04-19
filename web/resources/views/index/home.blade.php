@@ -635,9 +635,6 @@
     @endsection
     @section('footer')
         <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-            <script>
-                $.widget.bridge('uibutton', $.ui.button)
-            </script>
             <!-- ChartJS -->
             <script src="bootstrap/plugins/chart.js/Chart.min.js"></script>
             <!-- Sparkline -->
@@ -656,8 +653,6 @@
             <script src="bootstrap/plugins/summernote/summernote-bs4.min.js"></script>
             <!-- overlayScrollbars -->
             <script src="bootstrap/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-            <!-- AdminLTE App -->
-            <script src="bootstrap/dist/js/adminlte.js"></script>
             <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
             <script src="bootstrap/dist/js/pages/dashboard.js"></script>
             <!-- AdminLTE for demo purposes -->
