@@ -28,4 +28,15 @@ Route::get('/login', function () {
 });
 Route::get('/security', function () {
     return view('security');
+
+});
+Route::get('/employee',function (){
+   return view('staff.employee');
+});
+Route::get('/spare',function ()
+{
+   return view('stock.spare');
+});
+Route::get('gasoline',function () {
+   return view('stock.gasoline');
 });
