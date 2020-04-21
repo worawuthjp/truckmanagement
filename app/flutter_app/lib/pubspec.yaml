@@ -1,5 +1,0 @@
-name: my_awesome_application
-flutter:
-  assets:
-    - assets/im1.png
-    - images/logo.png

@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'truck driver',
       theme: ThemeData(
-        primarySwatch: Colors.red,
+        primarySwatch: Colors.blue,
       ),
       home: LoginPage(),
     );
@@ -61,7 +61,7 @@ class indexApp extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 CircleAvatar(
-                  radius: 80,
+                  radius: 100,
                   backgroundImage: AssetImage('./assets/im1.png'),
                 ),
                 Text(
