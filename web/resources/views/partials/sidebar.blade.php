@@ -45,13 +45,13 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/layout/fixed-topnav.html" class="nav-link">
+                            <a href="{{URL('/carhistory')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>ประวัติ</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/layout/fixed-footer.html" class="nav-link">
+                            <a href="{{URL('/sumcost')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>สรุปค่าใช้จ่าย</p>
                             </a>
@@ -85,7 +85,7 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="pages/forms/general.html" class="nav-link">
+                            <a href="{{URL('/employee')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>ข้อมูลพนักงานทั้งหมด</p>
                             </a>
@@ -108,13 +108,13 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="pages/tables/simple.html" class="nav-link">
+                            <a href="{{URL('/gasoline')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>น้ำมัน</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/tables/data.html" class="nav-link">
+                            <a href="{{URL('/spare')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>อะไหล่</p>
                             </a>

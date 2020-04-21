@@ -1,0 +1,565 @@
+@extends('layout.master')
+
+@section('body')
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper pt-3">
+        <!-- Main Content-->
+        <div class="content">
+            <div class="row" >
+
+                <div class="col-lg-3 col-4 cursor-hand" style="height: 8em" data-toggle="tooltip" title="">
+                    <!-- small box -->
+                    <div class="small-box bg-info  d-flex align-items-center" style="height: 7em"
+                         data-toggle="modal" data-target="#add_staff">
+                        <div class="inner">
+                            <label class="font-weight-light cursor-hand">
+                                <h2>เพิ่ม</h2>
+                                พนักงานใหม่
+                            </label>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- row -->
+            </div>
+            <div class="row">
+                <!-- row -->
+                <div class="col-12" >
+                    <div class="card">
+                        <div class="card-header bg-warning d-flex align-items-center" style="height: 3.5em">
+                            <h3 class="card-title">ข้อมูลพนักงานทั้งหมด</h3>
+                        </div>
+                        <!-- ./card header -->
+                        <div class="card-body">
+                            <table class="table table-bordered table-striped">
+                                <thead>
+                                <tr>
+                                    <th>ลำดับ</th>
+                                    <th>รหัสประจำตัว</th>
+                                    <th>ชื่อ-นามสกุล</th>
+                                    <th>แผนก</th>
+                                    <th>ตำแหน่ง</th>
+                                    <th>สถาะการทำงาน</th>
+                                    <th></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>9999</td>
+                                    <td>นายสมชาย&nbsp;&nbsp;&nbsp;&nbsp;มุ่งมาณะ</td>
+                                    <td>ขนส่ง</td>
+                                    <td>หัวหน้าฝ่าย</td>
+                                    <td>ทำงาน</td>
+                                    <td align="center"><button data-toggle="modal" data-target="#detail">รายละเอียด</button></td>
+                                </tr>
+                                </tbody>
+                                <thead>
+                                <tr>
+                                    <th>ลำดับ</th>
+                                    <th>รหัสประจำตัว</th>
+                                    <th>ชื่อ-นามสกุล</th>
+                                    <th>แผนก</th>
+                                    <th>ตำแหน่ง</th>
+                                    <th>สถาะการทำงาน</th>
+                                    <th></th>
+                                </tr>
+                                </thead>
+                            </table>
+                            <!-- ./card body -->
+                        </div>
+                        <!-- ./card -->
+                    </div>
+                    <!-- ./col -->
+                </div>
+                <!-- row -->
+            </div>
+
+        <!-- content -->
+        </div>
+        <!-- content warpper --->
+    </div>
+    {{--Modal Form Detail--}}
+    <div class="modal fade" id="detail">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-info">
+                    <h4 class="modal-title">นายสมชาย&nbsp;&nbsp;&nbsp;&nbsp;มุ่งมาณะ</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                <!-- modal-header -->
+                </div>
+                <hr>
+                    <div class="modal-body">
+                            <div class="row text-center">
+                                <p align="center"><img src="bootstrap/dist/img/user2-160x160.jpg" align="center"></p>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 text-right">
+                                    <label>รหัสพนักงาน :</label>
+                                </div>
+                                <div class="col-9">
+                                    <input class="col-9" maxlength="150" type="text" value="9999" readonly>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 text-right">
+                                    <label>ชื่อ :</label>
+                                </div>
+                                <div class="col-9">
+                                    <input class="col-9" maxlength="150" type="text" value="สมชาย" readonly>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-3 text-right">
+                                    <label>นามสกุล :</label>
+                                </div>
+                                <div class="col-9">
+                                    <input class="col-9" maxlength="150" type="text" value="มุ่งมาณะ" readonly>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-3 text-right">
+                                    <label>ชื่อเล่น :</label>
+                                </div>
+                                <div class="col-9">
+                                    <input class="col-9" maxlength="150" type="text" value="สมชาย" readonly>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-3 text-right">
+                                    <label>เพศ :</label>
+                                </div>
+                                <div class="col-9">
+                                    <input class="col-9" maxlength="150" type="text" value="ชาย" readonly>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 text-right">
+                                    <label>แผนก :</label>
+                                </div>
+                                <div class="col-9">
+                                    <input class="col-9" maxlength="150" type="text" value="ขนส่ง" readonly>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-3 text-right">
+                                    <label>ตำแหน่ง :</label>
+                                </div>
+                                <div class="col-9">
+                                    <input class="col-9" maxlength="150" type="text" value="หัวหน้าฝ่าย" readonly>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 text-right">
+                                    <label>เกิดวันที่ :</label>
+                                </div>
+                                <div class="col-9">
+                                    <input class="col-9" maxlength="150" type="text" value="19/01/1989" readonly>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-3 text-right">
+                                    <label>วุฒิการศึกษา :</label>
+                                </div>
+                                <div class="col-9">
+                                    <input class="col-9" maxlength="150" type="text" value="ปริญญาตรี" readonly>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-3 text-right">
+                                    <label>อีเมลล์ :</label>
+                                </div>
+                                <div class="col-9">
+                                    <input class="col-9" maxlength="150" type="text" value="Somchai@email.com" readonly>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-3 text-right">
+                                    <label>ที่อยู่ :</label>
+                                </div>
+                                <div class="col-9">
+                                    <input class="col-9" maxlength="150" type="text" value="1234 ม.1 ต.a อ.b จ.c 99999" readonly>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-3 text-right">
+                                    <label>วันทีเข้าทำงาน :</label>
+                                </div>
+                                <div class="col-9">
+                                    <input class="col-9" maxlength="150" type="text" value="12/03/2015" readonly>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 text-right">
+                                    <label>เบอร์โทรติดต่อ :</label>
+                                </div>
+                                <div class="col-9">
+                                    <input class="col-9" maxlength="150" type="text" value="09xxxxxxxx" readonly>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 text-right">
+                                    <label>ตารางการทำงาน :</label>
+                                </div>
+                                <div class="col-9">
+                                    <a href="#" style="text-decoration: none">ดูรายละเอียดเพิ่มเติม</a>
+                                </div>
+                            </div>
+
+                        <div class="modal-footer">
+                            <label class="btn btn-warning" data-toggle="modal" data-target="#update_staff" data-dismiss="modal"><i class="far fa-edit"></i>&ensp;แก้ไขข้อมูล</label>
+                            <label class="btn btn-danger" data-toggle="modal" data-target="#delete_staff" data-dismiss="modal"><i class="fas fa-trash"></i>&ensp;ลบพนักงาน</label>
+                        </div>
+                        <!-- modal-body -->
+                    </div>
+                <!-- modal-content -->
+            </div>
+            <!-- modal-dialog -->
+        </div>
+        <!-- modal fade -->
+    </div>
+    {{--Modal Form Update--}}
+    <div class="modal fade" id="update_staff">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-warning">
+                    <h4 class="modal-title"><i class="far fa-edit"></i>&ensp;แก้ไขข้อมูล</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <!-- modal-header -->
+                </div>
+                <div class="modal-body">
+                    <div class="row text-center">
+                        <p align="center"><img src="bootstrap/dist/img/user2-160x160.jpg" align="center"></p>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 text-right">
+                            <label>รหัสพนักงาน :</label>
+                        </div>
+                        <div class="col-9">
+                            <input class="col-9" maxlength="150" type="text" value="9999" >
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 text-right">
+                            <label>ชื่อ :</label>
+                        </div>
+                        <div class="col-9">
+                            <input class="col-12" maxlength="150" type="text" value="สมชาย" >
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3 text-right">
+                            <label>นามสกุล :</label>
+                        </div>
+                        <div class="col-9">
+                            <input class="col-12" maxlength="150" type="text" value="มุ่งมาณะ" >
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3 text-right">
+                            <label>ชื่อเล่น :</label>
+                        </div>
+                        <div class="col-9">
+                            <input class="col-12" maxlength="150" type="text" value="สมชาย">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3 text-right">
+                            <label>เพศ :</label>
+                        </div>
+                        <div class="col-9">
+                            <div class="col-4">
+                                <input maxlength="150" type="radio" name="gender"><label>ชาย</label>
+                            </div>
+                            <div class="col-4">
+                                <input maxlength="150" type="radio" name="gender"><label>หญิง</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 text-right">
+                            <label>แผนก :</label>
+                        </div>
+                        <div class="col-9">
+                            <select class="col-8">
+                                <option>ขนส่ง</option>
+                                <option>บริการทั่วไป</option>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3 text-right">
+                            <label>ตำแหน่ง :</label>
+                        </div>
+                        <div class="col-9">
+                            <select class="col-8">
+                                <option>หัวหน้าฝ่าย</option>
+                                <option>พนักงานทั่วไป</option>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 text-right">
+                            <label>เกิดวันที่ :</label>
+                        </div>
+                        <div class="col-9">
+                            <input class="col-12" maxlength="150" type="date" value="19/01/1989" >
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3 text-right">
+                            <label>วุฒิการศึกษา :</label>
+                        </div>
+                        <div class="col-9">
+                            <input class="col-12" maxlength="150" type="text" value="ปริญญาตรี">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3 text-right">
+                            <label>อีเมลล์ :</label>
+                        </div>
+                        <div class="col-9">
+                            <input class="col-12" maxlength="150" type="text" value="Somchai@email.com">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3 text-right">
+                            <label>ที่อยู่ :</label>
+                        </div>
+                        <div class="col-9">
+                            <input class="col-12" maxlength="150" type="text" value="1234 ม.1 ต.a อ.b จ.c 99999">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3 text-right">
+                            <label>วันทีเข้าทำงาน :</label>
+                        </div>
+                        <div class="col-9">
+                            <input class="col-12" maxlength="150" type="date" value="12/03/2015">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 text-right">
+                            <label>เบอร์โทรติดต่อ :</label>
+                        </div>
+                        <div class="col-9">
+                            <input class="col-12" maxlength="150" type="text" value="09xxxxxxxx">
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <label class="btn btn-primary">บันทึก</label>
+                        <label class="btn btn-secondary" data-dismiss="modal">ยกเลิก</label>
+                    </div>
+                    <!-- modal-body -->
+                </div>
+            <!-- modal-content -->
+            </div>
+        <!--modal dialog -->
+        </div>
+    <!-- Modal face -->
+    </div>
+    {{--Modal Form Delete--}}
+    <div class="modal fade" id="delete_staff">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-danger">
+                    <h4 class="modal-title"><i class="fas fa-trash-alt"></i>&ensp;ลบ นายสมชาย มุ่งมาณะ</h4>
+                <!-- modal-header -->
+                </div>
+                <div class="modal-body">
+                    คุณตั้งใจจะลบพนักงานชื่อ นายสมชาย&nbsp;&nbsp;&nbsp;&nbsp;มุ่งมาณะ หรือไม่ ?
+
+                    <div class="modal-footer">
+                        <label class="btn btn-primary">ยันยัน</label>
+                        <label class="btn btn-secondary" data-dismiss="modal">ยกเลิก</label>
+                    </div>
+                    <!-- modal-body -->
+                </div>
+
+            <!-- modal-content -->
+            </div>
+        <!-- modal-dialog -->
+        </div>
+    </div>
+    {{--Modal Form Add--}}
+    <div class="modal fade" id="add_staff">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-info">
+                    <h4 class="modal-title"><i class="fas fa-plus-circle "></i>&ensp;เพิ่มสมาชิกใหม่</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <!-- modal-header -->
+                </div>
+                <div class="modal-body">
+
+                    <div class="row col-12">
+                        <img src="bootstrap/dist/img/user2-160x160.jpg" align="center">
+                    </div>
+                    <div class="row">
+                        <div class="col-3 text-right">
+                            <label>รหัสพนักงาน :</label>
+                        </div>
+                        <div class="col-9">
+                            <input class="col-9" maxlength="150" type="text" value="9999" >
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 text-right">
+                            <label>ชื่อ :</label>
+                        </div>
+                        <div class="col-9">
+                            <input class="col-12" maxlength="150" type="text" value="สมชาย" >
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3 text-right">
+                            <label>นามสกุล :</label>
+                        </div>
+                        <div class="col-9">
+                            <input class="col-12" maxlength="150" type="text" value="มุ่งมาณะ" >
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3 text-right">
+                            <label>ชื่อเล่น :</label>
+                        </div>
+                        <div class="col-9">
+                            <input class="col-12" maxlength="150" type="text" value="สมชาย">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3 text-right">
+                            <label>เพศ :</label>
+                        </div>
+                        <div class="col-9">
+                            <div class="col-4">
+                                <input maxlength="150" type="radio" name="gender"><label>ชาย</label>
+                            </div>
+                            <div class="col-4">
+                                <input maxlength="150" type="radio" name="gender"><label>หญิง</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 text-right">
+                            <label>แผนก :</label>
+                        </div>
+                        <div class="col-9">
+                            <select class="col-8">
+                                <option>ขนส่ง</option>
+                                <option>บริการทั่วไป</option>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3 text-right">
+                            <label>ตำแหน่ง :</label>
+                        </div>
+                        <div class="col-9">
+                            <select class="col-8">
+                                <option>หัวหน้าฝ่าย</option>
+                                <option>พนักงานทั่วไป</option>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 text-right">
+                            <label>เกิดวันที่ :</label>
+                        </div>
+                        <div class="col-9">
+                            <input class="col-12" maxlength="150" type="date" value="19/01/1989" >
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3 text-right">
+                            <label>วุฒิการศึกษา :</label>
+                        </div>
+                        <div class="col-9">
+                            <input class="col-12" maxlength="150" type="text" value="ปริญญาตรี">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3 text-right">
+                            <label>อีเมลล์ :</label>
+                        </div>
+                        <div class="col-9">
+                            <input class="col-12" maxlength="150" type="text" value="Somchai@email.com">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3 text-right">
+                            <label>ที่อยู่ :</label>
+                        </div>
+                        <div class="col-9">
+                            <input class="col-12" maxlength="150" type="text" value="1234 ม.1 ต.a อ.b จ.c 99999">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3 text-right">
+                            <label>วันทีเข้าทำงาน :</label>
+                        </div>
+                        <div class="col-9">
+                            <input class="col-12" maxlength="150" type="date" value="12/03/2015">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 text-right">
+                            <label>เบอร์โทรติดต่อ :</label>
+                        </div>
+                        <div class="col-9">
+                            <input class="col-12" maxlength="150" type="text" value="09xxxxxxxx">
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <label class="btn btn-primary">ยันยัน</label>
+                        <label class="btn btn-secondary" data-dismiss="modal">ยกเลิก</label>
+                    </div>
+                    <!-- modal-body -->
+                </div>
+
+                <!-- modal-content -->
+            </div>
+            <!-- modal-dialog -->
+        </div>
+    </div>
+@endsection

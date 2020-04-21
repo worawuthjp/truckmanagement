@@ -52,9 +52,9 @@
                 <i class="fas fa-cog nav-icon" ></i> Setting
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="1">ตั้งค่าบัญชี</a>
+                <a class="dropdown-item" href="{{URL('/account_setting')}}">ตั้งค่าบัญชี</a>
                 <a class="dropdown-item" href="{{URL('/security')}}">ความปลอดภัย</a>
-                <a class="dropdown-item" href="3">เกี่ยวกับ</a>
+                <a class="dropdown-item" href="{{URL('/info')}}">เกี่ยวกับ</a>
                 <a class="dropdown-item" href="4">คู่มือการใช้งาน</a>
             </div>
         </li>
