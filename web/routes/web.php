@@ -50,5 +50,5 @@ Route::get('/info', function () {
     return view('info');
 });
 Route::get('/employee_reportWork', function () {
-    return view('employee.reportWork');
+    return view('staff.reportWork');
 });
