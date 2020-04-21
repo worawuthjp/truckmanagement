@@ -29,3 +29,6 @@ Route::get('/login', function () {
 Route::get('/security', function () {
     return view('security');
 });
+Route::get('/employee_reportWork', function () {
+    return view('employee.reportWork');
+});
