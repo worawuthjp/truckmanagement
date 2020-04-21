@@ -40,3 +40,9 @@ Route::get('/spare',function ()
 Route::get('gasoline',function () {
    return view('stock.gasoline');
 });
+Route::get('/carhistory', function () {
+    return view('car.historycar');
+});
+Route::get('/sumcost', function () {
+    return view('car.totalcost');
+});

@@ -45,13 +45,13 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/layout/fixed-topnav.html" class="nav-link">
+                            <a href="{{URL('/carhistory')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>ประวัติ</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/layout/fixed-footer.html" class="nav-link">
+                            <a href="{{URL('/sumcost')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>สรุปค่าใช้จ่าย</p>
                             </a>
