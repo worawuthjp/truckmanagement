@@ -29,3 +29,9 @@ Route::get('/login', function () {
 Route::get('/security', function () {
     return view('security');
 });
+Route::get('/account_setting', function () {
+    return view('account_setting');
+});
+Route::get('/info', function () {
+    return view('info');
+});
