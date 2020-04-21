@@ -39,7 +39,7 @@ class LoginPage extends StatelessWidget{
               MaterialPageRoute(builder: (context) => indexApp())
           )
         },
-        child: Text("Login55",
+        child: Text("Login",
             textAlign: TextAlign.center,
             style: style.copyWith(
                 color: Colors.white, fontWeight: FontWeight.bold)),
