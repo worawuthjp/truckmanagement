@@ -23,6 +23,14 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <tr>
+                                        <td>ล้อแม็ก Hyundai Grand Starex 2020</td>
+                                        <td>9999</td>
+                                        <td><p>รถกระบะ</p><p>รถบรรทุก</p></td>
+                                        <td>1,500</td>
+                                        <td>50</td>
+                                    </tr>
+
                                 </tbody>
                                 <tfoot>
                                     <tr>

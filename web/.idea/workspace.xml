@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb327500-6279-4791-a533-f54d9c77192e" name="Default Changelist" comment="First Update All">
+      <change beforePath="$PROJECT_DIR$/../.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_4_2563_17_28__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_4_2563_17_28__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_4_2563_2_15__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_4_2563_2_15__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/web.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/car/info.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/car/info.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/process/process.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/process/process.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/security.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/security.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/staff/employee.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/staff/employee.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/stock/spare.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/stock/spare.blade.php" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +18,9 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -144,6 +150,18 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
@@ -173,11 +191,28 @@
       <workItem from="1587254572450" duration="7100000" />
       <workItem from="1587298932691" duration="4460000" />
       <workItem from="1587303708559" duration="411000" />
+      <workItem from="1587486058437" duration="3359000" />
+      <workItem from="1587559544560" duration="148000" />
+      <workItem from="1587559769118" duration="5249000" />
+      <workItem from="1587632330692" duration="3094000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1587304176427">
