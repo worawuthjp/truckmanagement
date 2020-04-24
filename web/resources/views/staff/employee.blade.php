@@ -15,7 +15,6 @@
         <!-- Main Content-->
         <div class="content">
             <div class="row" >
-
                 <div class="col-lg-3 col-4 cursor-hand" style="height: 8em" data-toggle="tooltip" title="">
                     <!-- small box -->
                     <div class="small-box bg-info  d-flex align-items-center" style="height: 7em"
@@ -316,7 +315,7 @@
                             <label>รหัสพนักงาน :</label>
                         </div>
                         <div class="col-9">
-                            <input class="col-9" maxlength="150" type="text" value="9999" >
+                            <input class="col-9" maxlength="150" type="text" value="9999">
                         </div>
                     </div>
                     <div class="row">
@@ -324,7 +323,7 @@
                             <label>ชื่อ :</label>
                         </div>
                         <div class="col-9">
-                            <input class="col-12" maxlength="150" type="text" value="สมชาย" >
+                            <input class="col-12" maxlength="150" type="text" value="สมชาย">
                         </div>
                     </div>
 
@@ -333,7 +332,7 @@
                             <label>นามสกุล :</label>
                         </div>
                         <div class="col-9">
-                            <input class="col-12" maxlength="150" type="text" value="มุ่งมาณะ" >
+                            <input class="col-12" maxlength="150" type="text" value="มุ่งมาณะ">
                         </div>
                     </div>
 
@@ -550,7 +549,7 @@
                             <label>ชื่อ :</label>
                         </div>
                         <div class="col-9">
-                            <input class="col-12" maxlength="150" type="text" value="สมชาย" >
+                            <input class="col-12" maxlength="150" type="text" >
                         </div>
                     </div>
 
@@ -559,7 +558,7 @@
                             <label>นามสกุล :</label>
                         </div>
                         <div class="col-9">
-                            <input class="col-12" maxlength="150" type="text" value="มุ่งมาณะ" >
+                            <input class="col-12" maxlength="150" type="text"  >
                         </div>
                     </div>
 
@@ -568,7 +567,7 @@
                             <label>ชื่อเล่น :</label>
                         </div>
                         <div class="col-9">
-                            <input class="col-12" maxlength="150" type="text" value="สมชาย">
+                            <input class="col-12" maxlength="150" type="text">
                         </div>
                     </div>
 
@@ -590,10 +589,10 @@
                         <div class="col-3 text-right">
                             <label>แผนก :</label>
                         </div>
-                        <div class="col-9">
+                        <div class="col-9 employee-select">
                             <select class="col-8">
-                                <option>ขนส่ง</option>
-                                <option>บริการทั่วไป</option>
+                                <option value="1">ขนส่ง</option>
+                                <option value="2">บริการทั่วไป</option>
                                 <option></option>
                             </select>
                         </div>
@@ -609,6 +608,47 @@
                                 <option>พนักงานทั่วไป</option>
                                 <option></option>
                             </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 text-right">
+                            <label>เลขที่ใบขับขี่ :</label>
+                        </div>
+                        <div class="col-9">
+                            <input class="col-9" maxlength="150" type="text" value="12345678" >
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3 text-right">
+                            <label>ชนิด :</label>
+                        </div>
+                        <div class="col-9">
+                            <input class="col-9" maxlength="150" type="text" value="หัวหน้าฝ่าย" >
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 text-right ">
+                            <label>วันที่อนุญาต :</label>
+                        </div>
+                        <div class="col-9">
+                            <input class="col-9" maxlength="150" type="text" value="12-03-2562" >
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 text-right">
+                            <label>วันที่หมดอายุ :</label>
+                        </div>
+                        <div class="col-9">
+                            <input class="col-9" maxlength="150" type="text" value="12-03-2567" >
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 text-right">
+                            <label>สถานที่ออกใบอนุญาต :</label>
+                        </div>
+                        <div class="col-9">
+                            <input class="col-9" maxlength="150" type="text" value="กรุงเทพมหานคร" >
                         </div>
                     </div>
                     <div class="row">
