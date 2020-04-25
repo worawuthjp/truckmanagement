@@ -2,7 +2,7 @@
     <!-- Brand Logo -->
     <a href="{{URL('/')}}" class="brand-link">
         <img src="bootstrap/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-            style="opacity: .8">
+             style="opacity: .8">
         <span class="brand-text font-weight-light">Truck Management</span>
     </a>
 
@@ -38,12 +38,13 @@
                                 <p>ข้อมูลรถ</p>
                             </a>
                         </li>
+                        <!--
                         <li class="nav-item">
                             <a href="pages/layout/fixed-sidebar.html" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>อะไหล่รถ</p>
                             </a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a href="{{URL('/carhistory')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
@@ -91,7 +92,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{URL('/employee_reportWork')}}" class="nav-link">
+                            <a href="pages/forms/advanced.html" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>รายงานสรุป</p>
                             </a>
