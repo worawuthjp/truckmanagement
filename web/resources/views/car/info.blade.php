@@ -2,8 +2,19 @@
 
 @section('body')
     <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper pt-3">
-        <!-- Main content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1 class="m-0 text-dark">ข้อมูลรถ</h1>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </div>
+        <!-- /.content-header -->
+      <!-- Main content -->
         <section class="content">
             <div class="row">
                 <div class="col-lg-3 col-4 cursor-hand" style="height: 8em" data-toggle="tooltip" title="">
@@ -21,39 +32,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-4 cursor-hand" style="height: 8em" data-toggle="tooltip" title="">
-                    <!-- small box -->
-                    <div class="small-box bg-info  d-flex align-items-center" style="height: 7em"
-                         data-toggle="modal" data-target="#updatecarinfo">
-                        <div class="inner">
-                            <label class="font-weight-light cursor-hand">
-                                <h2>อัปเดต</h2>
-                                ข้อมูลรถ
-                            </label>
-                        </div>
-                        <div class="icon">
-                            <i class="ion ion-edit"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-4 cursor-hand" style="height: 8em" data-toggle="tooltip" title="">
-                    <!-- small box -->
-                    <div class="small-box bg-info  d-flex align-items-center" style="height: 7em"
-                         data-toggle="modal" data-target="#deletecarinfo">
-                        <div class="inner">
-                            <label class="font-weight-light cursor-hand">
-                                <h2>ลบ</h2>
-                                ข้อมูลรถ
-                            </label>
-                        </div>
-                        <div class="icon">
-                            <i class="ion ion-trash-b"></i>
-                        </div>
-                    </div>
-                </div>
-                <!-- ./col -->
-            </div>
-
             <div class="row">
                 <div class="col-12">
 
@@ -76,6 +54,7 @@
                                     <th>ปริมาณน้ำมันเครื่อง</th>
                                     <th>ปริมาณน้ำมันเกียร์</th>
                                     <th>ปริมาณน้ำมันเฟืองท้าย</th>
+                                    <th>การจัดการ</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -92,6 +71,7 @@
                                     <th>ปริมาณน้ำมันเครื่อง</th>
                                     <th>ปริมาณน้ำมันเกียร์</th>
                                     <th>ปริมาณน้ำมันเฟืองท้าย</th>
+                                    <th>การจัดการ</th>
                                 </tr>
                                 </tfoot>
                             </table>
@@ -356,4 +336,3 @@
     <!-- /.modal -->
 @endsection
 
-ย้

@@ -3,6 +3,17 @@
 @section('body')
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1 class="m-0 text-dark">ตั้งค่าความปลอดภัย</h1>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </div>
+        <!-- /.content-header -->
         <!-- Main content -->
         <section class="content col-6 ml-auto mr-auto">
             <div class="row">
@@ -42,6 +53,7 @@
                         </div>
                         <div class="card-body">
                             <a href="#" class="btn btn-primary float-right">Confirm</a>
+                            <a href="{{URL('/')}}" class="btn btn-secondary float-left">Back</a>
                         </div>
                     </div>
                 </div>

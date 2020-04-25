@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb327500-6279-4791-a533-f54d9c77192e" name="Default Changelist" comment="First Update All">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_4_2563_17_28__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_4_2563_17_28__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_4_2563_2_15__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_4_2563_2_15__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/web.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/car/info.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/car/info.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/process/process.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/process/process.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/security.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/security.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -173,11 +175,30 @@
       <workItem from="1587254572450" duration="7100000" />
       <workItem from="1587298932691" duration="4460000" />
       <workItem from="1587303708559" duration="411000" />
+      <workItem from="1587486058437" duration="3359000" />
+      <workItem from="1587559544560" duration="148000" />
+      <workItem from="1587559769118" duration="5249000" />
+      <workItem from="1587632330692" duration="3094000" />
+      <workItem from="1587761595997" duration="111000" />
+      <workItem from="1587800740322" duration="98000" />
+      <workItem from="1587834335782" duration="658000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1587304176427">
@@ -200,17 +221,17 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587189568050" />
-    <state x="147" y="65" key="MergeDialog" timestamp="1587237349184">
+    <state x="147" y="65" key="MergeDialog" timestamp="1587761640070">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="147" y="65" key="MergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1587237349183" />
+    <state x="147" y="65" key="MergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1587761640070" />
     <state x="604" y="336" key="NewPhpFileDialog" timestamp="1587300015868">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1587300015868" />
-    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587304119327">
+    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587834400369">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1587304119327" />
+    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1587834400369" />
   </component>
 </project>
