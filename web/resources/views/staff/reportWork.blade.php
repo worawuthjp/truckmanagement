@@ -125,8 +125,15 @@
                                             </thead>
                                             <tbody>
                                                 <tr class="odd">
-                                                    <td valign="top" colspan="7" class="dataTables_empty">No data
-                                                        available in table</td>
+                                                    <!-- <td valign="top" colspan="7" class="dataTables_empty">No data
+                                                        available in table</td> -->
+                                                    <td> 555</td>
+                                                    <td> 555</td>
+                                                    <td> 555</td>
+                                                    <td> 555</td>
+                                                    <td> 555</td>
+                                                    <td> 555</td>
+                                                    <td> 555</td>
                                                 </tr>
                                             </tbody>
                                             <tfoot>
