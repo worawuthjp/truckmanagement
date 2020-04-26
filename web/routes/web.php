@@ -50,3 +50,6 @@ Route::get('/info', function () {
 Route::get('/employee_reportWork', function () {
     return view('staff.reportWork');
 });
+Route::get('/sumcost', function () {
+    return view('car.totalcost');
+});
